@@ -27,30 +27,34 @@ const t = new TimeSched({
     ],
     Faculties: [
         {
-            id: 'Mohit',
+            id: 'Dr. Vats',
+            tags: ['Math']
+        },
+        {
+            id: 'Dr. Mohit',
             tags: ['CSE']
         },
         {
-            id: 'Pradeep',
+            id: 'Dr. Pradeep',
             tags: ['CSE']
         },
         {
-            id: 'Manoj',
+            id: 'Dr. Manoj',
             tags: ['Econ']
         },
         {
-            id: 'Ghosh',
+            id: 'Dr. Ghosh',
             tags: ['Bio']
         },
     ],
     Rooms: [
         {
-            id: 'LH-G1',
+            id: 'LH-F1',
             capacity: 100,
             tags: ['LH']
         },
         {
-            id: 'LH-G2',
+            id: 'LH-F2',
             capacity: 100,
             tags: ['LH', 'Proj']
         },
@@ -67,6 +71,15 @@ const t = new TimeSched({
             studentsRequired: (s) => s.tags.includes('CSE'),
             facultyRequired: (f) => f.tags.includes('CSE'),
             roomsRequired: (r) => r.tags.includes('LH'),
+            timeSlotRequired: (t) => t.duration == 1 && t.hour < 3,
+            extraResourcesRequired: [],
+            weeklyFrequency: 4,
+        },
+        {
+            name: 'Math',
+            studentsRequired: (s) => s.tags.includes('CSE'),
+            facultyRequired: (f) => f.tags.includes('Math'),
+            roomsRequired: (r) => r.tags.includes('LH'),
             timeSlotRequired: (t) => t.duration == 1,
             extraResourcesRequired: [],
             weeklyFrequency: 4,
@@ -74,15 +87,6 @@ const t = new TimeSched({
         {
             name: 'C++ Tute G1',
             studentsRequired: (s) => s.tags.includes('CSE') && s.tags.includes('G1'),
-            facultyRequired: (f) => f.tags.includes('CSE'),
-            roomsRequired: (r) => r.tags.includes('Proj'),
-            timeSlotRequired: (t) => t.duration == 1,
-            extraResourcesRequired: [],
-            weeklyFrequency: 1,
-        },
-        {
-            name: 'C++ Tute G2',
-            studentsRequired: (s) => s.tags.includes('CSE') && s.tags.includes('G2'),
             facultyRequired: (f) => f.tags.includes('CSE'),
             roomsRequired: (r) => r.tags.includes('Proj'),
             timeSlotRequired: (t) => t.duration == 1,
@@ -104,6 +108,15 @@ const t = new TimeSched({
             facultyRequired: (f) => f.tags.includes('CSE'),
             roomsRequired: (r) => r.tags.includes('Lab'),
             timeSlotRequired: (t) => t.duration == 3,
+            extraResourcesRequired: [],
+            weeklyFrequency: 1,
+        },
+        {
+            name: 'C++ Tute G2',
+            studentsRequired: (s) => s.tags.includes('CSE') && s.tags.includes('G2'),
+            facultyRequired: (f) => f.tags.includes('CSE'),
+            roomsRequired: (r) => r.tags.includes('Proj'),
+            timeSlotRequired: (t) => t.duration == 1,
             extraResourcesRequired: [],
             weeklyFrequency: 1,
         },
@@ -133,12 +146,12 @@ const t = new TimeSched({
         overlap: 100,
     },
     timepreference: [
-        [  1,  1,  0,  0,  0],
+        [  2,  1,  0,  0,  0],
         [  1,  0,  0,  0,  0],
         [  0,  0,  0,  0,  0],
-        [  0,  0,  0,  0,  1],
-        [  0,  0,  0,  0,  1],
-        [  0,  0,  0,  0,  1],
+        [  0,  0,  0,  0,  2],
+        [  0,  0,  0,  0,  2],
+        [  1,  1,  1,  1,  2],
     ]
 });
 

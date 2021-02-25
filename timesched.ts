@@ -305,7 +305,8 @@ class TimeSched {
             h.step();
             const c = h.bestSolution() as TimeTable;
             // console.clear();
-            console.log(`Iteration ${i + 1} Eval: `, c.evaluate());
+            if (i % 100 == 0)
+                console.log(`Iteration ${i + 1} Eval: `, c.evaluate());
             // console.log(this.displayTable(c, this.Students));
             // for (let i = 0; i < 1e6; i++) {
             //     for (let j = 0; j < 100; j++) {
