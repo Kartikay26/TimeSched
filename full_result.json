@@ -1,0 +1,722 @@
+{
+  "C++.0": [
+    [
+      {
+        "id": "CSE G1 Bio",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "CSE G2 Bio",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G2",
+          "Bio"
+        ]
+      },
+      {
+        "id": "CSE G1 Econ",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G1",
+          "Econ"
+        ]
+      },
+      {
+        "id": "CSE G2 Econ",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G2",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Pradeep",
+      "tags": [
+        "CSE"
+      ]
+    },
+    {
+      "day": 2,
+      "hour": 0,
+      "duration": 1
+    },
+    {
+      "id": "LH-G1",
+      "capacity": 100,
+      "tags": [
+        "LH"
+      ]
+    }
+  ],
+  "C++.1": [
+    [
+      {
+        "id": "CSE G1 Bio",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "CSE G2 Bio",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G2",
+          "Bio"
+        ]
+      },
+      {
+        "id": "CSE G1 Econ",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G1",
+          "Econ"
+        ]
+      },
+      {
+        "id": "CSE G2 Econ",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G2",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Pradeep",
+      "tags": [
+        "CSE"
+      ]
+    },
+    {
+      "day": 2,
+      "hour": 3,
+      "duration": 1
+    },
+    {
+      "id": "LH-G2",
+      "capacity": 100,
+      "tags": [
+        "LH",
+        "Proj"
+      ]
+    }
+  ],
+  "C++.2": [
+    [
+      {
+        "id": "CSE G1 Bio",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "CSE G2 Bio",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G2",
+          "Bio"
+        ]
+      },
+      {
+        "id": "CSE G1 Econ",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G1",
+          "Econ"
+        ]
+      },
+      {
+        "id": "CSE G2 Econ",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G2",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Mohit",
+      "tags": [
+        "CSE"
+      ]
+    },
+    {
+      "day": 1,
+      "hour": 3,
+      "duration": 1
+    },
+    {
+      "id": "LH-G2",
+      "capacity": 100,
+      "tags": [
+        "LH",
+        "Proj"
+      ]
+    }
+  ],
+  "C++.3": [
+    [
+      {
+        "id": "CSE G1 Bio",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "CSE G2 Bio",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G2",
+          "Bio"
+        ]
+      },
+      {
+        "id": "CSE G1 Econ",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G1",
+          "Econ"
+        ]
+      },
+      {
+        "id": "CSE G2 Econ",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G2",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Pradeep",
+      "tags": [
+        "CSE"
+      ]
+    },
+    {
+      "day": 2,
+      "hour": 5,
+      "duration": 1
+    },
+    {
+      "id": "LH-G1",
+      "capacity": 100,
+      "tags": [
+        "LH"
+      ]
+    }
+  ],
+  "C++ Tute G1.0": [
+    [
+      {
+        "id": "CSE G1 Bio",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "CSE G1 Econ",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G1",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Mohit",
+      "tags": [
+        "CSE"
+      ]
+    },
+    {
+      "day": 1,
+      "hour": 1,
+      "duration": 1
+    },
+    {
+      "id": "LH-G2",
+      "capacity": 100,
+      "tags": [
+        "LH",
+        "Proj"
+      ]
+    }
+  ],
+  "C++ Tute G2.0": [
+    [
+      {
+        "id": "CSE G2 Bio",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G2",
+          "Bio"
+        ]
+      },
+      {
+        "id": "CSE G2 Econ",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G2",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Pradeep",
+      "tags": [
+        "CSE"
+      ]
+    },
+    {
+      "day": 4,
+      "hour": 2,
+      "duration": 1
+    },
+    {
+      "id": "LH-G2",
+      "capacity": 100,
+      "tags": [
+        "LH",
+        "Proj"
+      ]
+    }
+  ],
+  "C++ Lab G1.0": [
+    [
+      {
+        "id": "CSE G1 Bio",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "CSE G1 Econ",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G1",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Pradeep",
+      "tags": [
+        "CSE"
+      ]
+    },
+    {
+      "day": 0,
+      "hour": 3,
+      "duration": 3
+    },
+    {
+      "id": "Comp Lab",
+      "capacity": 100,
+      "tags": [
+        "Lab"
+      ]
+    }
+  ],
+  "C++ Lab G2.0": [
+    [
+      {
+        "id": "CSE G2 Bio",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G2",
+          "Bio"
+        ]
+      },
+      {
+        "id": "CSE G2 Econ",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G2",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Pradeep",
+      "tags": [
+        "CSE"
+      ]
+    },
+    {
+      "day": 3,
+      "hour": 3,
+      "duration": 3
+    },
+    {
+      "id": "Comp Lab",
+      "capacity": 100,
+      "tags": [
+        "Lab"
+      ]
+    }
+  ],
+  "Bio.0": [
+    [
+      {
+        "id": "CSE G1 Bio",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "CSE G2 Bio",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G2",
+          "Bio"
+        ]
+      }
+    ],
+    {
+      "id": "Ghosh",
+      "tags": [
+        "Bio"
+      ]
+    },
+    {
+      "day": 4,
+      "hour": 1,
+      "duration": 1
+    },
+    {
+      "id": "LH-G2",
+      "capacity": 100,
+      "tags": [
+        "LH",
+        "Proj"
+      ]
+    }
+  ],
+  "Bio.1": [
+    [
+      {
+        "id": "CSE G1 Bio",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "CSE G2 Bio",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G2",
+          "Bio"
+        ]
+      }
+    ],
+    {
+      "id": "Ghosh",
+      "tags": [
+        "Bio"
+      ]
+    },
+    {
+      "day": 2,
+      "hour": 1,
+      "duration": 1
+    },
+    {
+      "id": "LH-G1",
+      "capacity": 100,
+      "tags": [
+        "LH"
+      ]
+    }
+  ],
+  "Bio.2": [
+    [
+      {
+        "id": "CSE G1 Bio",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "CSE G2 Bio",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G2",
+          "Bio"
+        ]
+      }
+    ],
+    {
+      "id": "Ghosh",
+      "tags": [
+        "Bio"
+      ]
+    },
+    {
+      "day": 1,
+      "hour": 5,
+      "duration": 1
+    },
+    {
+      "id": "LH-G2",
+      "capacity": 100,
+      "tags": [
+        "LH",
+        "Proj"
+      ]
+    }
+  ],
+  "Bio.3": [
+    [
+      {
+        "id": "CSE G1 Bio",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "CSE G2 Bio",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G2",
+          "Bio"
+        ]
+      }
+    ],
+    {
+      "id": "Ghosh",
+      "tags": [
+        "Bio"
+      ]
+    },
+    {
+      "day": 2,
+      "hour": 4,
+      "duration": 1
+    },
+    {
+      "id": "LH-G2",
+      "capacity": 100,
+      "tags": [
+        "LH",
+        "Proj"
+      ]
+    }
+  ],
+  "Econ.0": [
+    [
+      {
+        "id": "CSE G1 Econ",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G1",
+          "Econ"
+        ]
+      },
+      {
+        "id": "CSE G2 Econ",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G2",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Manoj",
+      "tags": [
+        "Econ"
+      ]
+    },
+    {
+      "day": 4,
+      "hour": 1,
+      "duration": 1
+    },
+    {
+      "id": "LH-G1",
+      "capacity": 100,
+      "tags": [
+        "LH"
+      ]
+    }
+  ],
+  "Econ.1": [
+    [
+      {
+        "id": "CSE G1 Econ",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G1",
+          "Econ"
+        ]
+      },
+      {
+        "id": "CSE G2 Econ",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G2",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Manoj",
+      "tags": [
+        "Econ"
+      ]
+    },
+    {
+      "day": 1,
+      "hour": 4,
+      "duration": 1
+    },
+    {
+      "id": "LH-G1",
+      "capacity": 100,
+      "tags": [
+        "LH"
+      ]
+    }
+  ],
+  "Econ.2": [
+    [
+      {
+        "id": "CSE G1 Econ",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G1",
+          "Econ"
+        ]
+      },
+      {
+        "id": "CSE G2 Econ",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G2",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Manoj",
+      "tags": [
+        "Econ"
+      ]
+    },
+    {
+      "day": 2,
+      "hour": 4,
+      "duration": 1
+    },
+    {
+      "id": "LH-G1",
+      "capacity": 100,
+      "tags": [
+        "LH"
+      ]
+    }
+  ],
+  "Econ.3": [
+    [
+      {
+        "id": "CSE G1 Econ",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G1",
+          "Econ"
+        ]
+      },
+      {
+        "id": "CSE G2 Econ",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G2",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Manoj",
+      "tags": [
+        "Econ"
+      ]
+    },
+    {
+      "day": 2,
+      "hour": 1,
+      "duration": 1
+    },
+    {
+      "id": "LH-G2",
+      "capacity": 100,
+      "tags": [
+        "LH",
+        "Proj"
+      ]
+    }
+  ]
+}
