@@ -232,8 +232,12 @@ class TimeSched {
                 for (let hour = 0; hour < this.data.hours; hour++) {
                     const cell_id = `${studentgrp.id}, ${hour}, ${day}`;
                     const cell_id_next_day = `${studentgrp.id}, ${hour}, ${day + 1}`;
+                    const cell_id_next_next_day = `${studentgrp.id}, ${hour}, ${day + 2}`;
                     const cell_id_next_hr = `${studentgrp.id}, ${hour + 1}, ${day}`;
                     if (course_name(sv.get(cell_id)) == course_name(sv.get(cell_id_next_day))) {
+                        penalty -= this.data.penalties.consistencyBonusSub;
+                    }
+                    if (course_name(sv.get(cell_id)) == course_name(sv.get(cell_id_next_next_day))) {
                         penalty -= this.data.penalties.consistencyBonusSub;
                     }
                     if (room_name(sv.get(cell_id)) == room_name(sv.get(cell_id_next_day))) {
@@ -254,13 +258,16 @@ class TimeSched {
 
     displayTable(t: TimeTable, view: ResourceSet): string {
         // First figure out how to iterate over resource value
-        let m = new Map<string, string[][]>();
+        let m = new Map<string, {content: string, rowSpan: number}[][]>();
         if (view == this.Students) {
             this.Students.allResources.forEach((s) => {
                 const r = s as StudentGroup;
                 const blankTable = [];
                 for (let j = 0; j < this.data.hours; j++) {
-                    blankTable.push(Array(this.data.days).fill(""));
+                    const row = [];
+                    for (let i = 0; i < this.data.days; i++)
+                        row.push({content: "", rowSpan: 1});
+                    blankTable.push(row);
                 }
                 m.set(r.id, blankTable);
             })
@@ -271,11 +278,12 @@ class TimeSched {
                 const room = rlist[3] as Room;
                 for (const studentgrp of slist) {
                     const table = m.get(studentgrp.id);
-                    if (table![ts.hour][ts.day] != '')
-                        table![ts.hour][ts.day] += `***\n`;
-                    table![ts.hour][ts.day] += `${key.split('.')[0]}\n${fac.id}\n${room.id}`;
+                    if (table![ts.hour][ts.day].content != '')
+                        table![ts.hour][ts.day].content += `***\n`;
+                    table![ts.hour][ts.day].rowSpan = ts.duration;
+                    table![ts.hour][ts.day].content += `${key.split('.')[0]}\n${fac.id}\n${room.id}`;
                     for (let i = 1; i < ts.duration && ts.hour + i < this.data.hours; i++) {
-                        table![ts.hour + i][ts.day] += `^`;
+                        table![ts.hour + i][ts.day].content = `^`;
                     }
                 }
             })
@@ -284,7 +292,10 @@ class TimeSched {
                 const r = s as Faculty;
                 const blankTable = [];
                 for (let j = 0; j < this.data.hours; j++) {
-                    blankTable.push(Array(this.data.days).fill(""));
+                    const row = [];
+                    for (let i = 0; i < this.data.days; i++)
+                        row.push({content: "", rowSpan: 1});
+                    blankTable.push(row);
                 }
                 m.set(r.id, blankTable);
             })
@@ -294,11 +305,12 @@ class TimeSched {
                 const ts = rlist[2] as TimeSlot;
                 const room = rlist[3] as Room;
                 const table = m.get(fac.id);
-                if (table![ts.hour][ts.day] != '')
-                    table![ts.hour][ts.day] += `***\n`;
-                table![ts.hour][ts.day] += `${key.split('.')[0]}\n${slist.map(s => s.id).join('+')}\n${room.id}`;
+                if (table![ts.hour][ts.day].content != '')
+                    table![ts.hour][ts.day].content += `***\n`;
+                table![ts.hour][ts.day].rowSpan = ts.duration;
+                table![ts.hour][ts.day].content += `${key.split('.')[0]}\n${room.id}\n${slist.map(s => s.id).join('+')}`;
                 for (let i = 1; i < ts.duration && ts.hour + i < this.data.hours; i++) {
-                    table![ts.hour + i][ts.day] += `^`;
+                    table![ts.hour + i][ts.day].content = `^`;
                 }
             })
         } else if (view == this.Rooms) {
@@ -306,7 +318,10 @@ class TimeSched {
                 const r = s as Room;
                 const blankTable = [];
                 for (let j = 0; j < this.data.hours; j++) {
-                    blankTable.push(Array(this.data.days).fill(""));
+                    const row = [];
+                    for (let i = 0; i < this.data.days; i++)
+                        row.push({content: "", rowSpan: 1});
+                    blankTable.push(row);
                 }
                 m.set(r.id, blankTable);
             })
@@ -316,11 +331,12 @@ class TimeSched {
                 const ts = rlist[2] as TimeSlot;
                 const room = rlist[3] as Room;
                 const table = m.get(room.id);
-                if (table![ts.hour][ts.day] != '')
-                    table![ts.hour][ts.day] += `***\n`;
-                table![ts.hour][ts.day] += `${key.split('.')[0]}\n${slist.map(s => s.id).join('+')}\n${fac.id}`;
+                if (table![ts.hour][ts.day].content != '')
+                    table![ts.hour][ts.day].content += `***\n`;
+                table![ts.hour][ts.day].rowSpan = ts.duration;
+                table![ts.hour][ts.day].content += `${key.split('.')[0]}\n${fac.id}\n${slist.map(s => s.id).join('+')}`;
                 for (let i = 1; i < ts.duration && ts.hour + i < this.data.hours; i++) {
-                    table![ts.hour + i][ts.day] += `^`;
+                    table![ts.hour + i][ts.day].content = `^`;
                 }
             })
         } else {
@@ -333,11 +349,17 @@ class TimeSched {
                     colWidths: Array(this.data.days).fill(30), rowHeights: Array(this.data.hours).fill(3),
                     chars: { 'top': '═', 'top-mid': '╤', 'top-left': '╔', 'top-right': '╗', 'bottom': '═', 'bottom-mid': '╧', 'bottom-left': '╚', 'bottom-right': '╝', 'left': '║', 'left-mid': '╟', 'right': '║', 'right-mid': '╢' },
                     style: { head: [], border: [], },
-                    // wordWrap: true
+                    wordWrap: true
                 }
             );
             for (let i = 0; i < this.data.hours; i++) {
-                clitable.push(table[i]);
+                const row = [];
+                for (let j = 0; j < table[i].length; j++) {
+                    const element = table[i][j];
+                    if (element.content != '^')
+                        row.push(element);
+                }
+                clitable.push(row);
             }
             str += name + '\n' + clitable.toString() + "\n\n";
         }

@@ -46,14 +46,15 @@
     },
     {
       "day": 2,
-      "hour": 1,
+      "hour": 2,
       "duration": 1
     },
     {
-      "id": "LH-F1",
+      "id": "LH-F2",
       "capacity": 100,
       "tags": [
-        "LH"
+        "LH",
+        "Proj"
       ]
     }
   ],
@@ -104,14 +105,15 @@
     },
     {
       "day": 4,
-      "hour": 1,
+      "hour": 2,
       "duration": 1
     },
     {
-      "id": "LH-F1",
+      "id": "LH-F2",
       "capacity": 100,
       "tags": [
-        "LH"
+        "LH",
+        "Proj"
       ]
     }
   ],
@@ -162,14 +164,15 @@
     },
     {
       "day": 3,
-      "hour": 1,
+      "hour": 2,
       "duration": 1
     },
     {
-      "id": "LH-F1",
+      "id": "LH-F2",
       "capacity": 100,
       "tags": [
-        "LH"
+        "LH",
+        "Proj"
       ]
     }
   ],
@@ -220,14 +223,15 @@
     },
     {
       "day": 1,
-      "hour": 1,
+      "hour": 2,
       "duration": 1
     },
     {
-      "id": "LH-F1",
+      "id": "LH-F2",
       "capacity": 100,
       "tags": [
-        "LH"
+        "LH",
+        "Proj"
       ]
     }
   ],
@@ -277,8 +281,8 @@
       ]
     },
     {
-      "day": 1,
-      "hour": 5,
+      "day": 2,
+      "hour": 4,
       "duration": 1
     },
     {
@@ -336,8 +340,8 @@
       ]
     },
     {
-      "day": 2,
-      "hour": 5,
+      "day": 4,
+      "hour": 4,
       "duration": 1
     },
     {
@@ -396,7 +400,7 @@
     },
     {
       "day": 3,
-      "hour": 5,
+      "hour": 4,
       "duration": 1
     },
     {
@@ -454,8 +458,8 @@
       ]
     },
     {
-      "day": 4,
-      "hour": 5,
+      "day": 1,
+      "hour": 4,
       "duration": 1
     },
     {
@@ -496,7 +500,7 @@
     },
     {
       "day": 1,
-      "hour": 4,
+      "hour": 1,
       "duration": 1
     },
     {
@@ -537,7 +541,7 @@
     },
     {
       "day": 2,
-      "hour": 4,
+      "hour": 1,
       "duration": 1
     },
     {
@@ -578,7 +582,7 @@
     },
     {
       "day": 0,
-      "hour": 3,
+      "hour": 0,
       "duration": 3
     },
     {
@@ -618,7 +622,7 @@
     },
     {
       "day": 0,
-      "hour": 0,
+      "hour": 3,
       "duration": 3
     },
     {
@@ -657,99 +661,20 @@
       ]
     },
     {
-      "day": 4,
-      "hour": 0,
-      "duration": 1
-    },
-    {
-      "id": "LH-F1",
-      "capacity": 100,
-      "tags": [
-        "LH"
-      ]
-    }
-  ],
-  "Bio.1": [
-    [
-      {
-        "id": "CSE G1 Bio",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G1",
-          "Bio"
-        ]
-      },
-      {
-        "id": "CSE G2 Bio",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G2",
-          "Bio"
-        ]
-      }
-    ],
-    {
-      "id": "Dr. Ghosh",
-      "tags": [
-        "Bio"
-      ]
-    },
-    {
       "day": 2,
       "hour": 0,
       "duration": 1
     },
     {
-      "id": "LH-F1",
+      "id": "LH-F2",
       "capacity": 100,
       "tags": [
-        "LH"
+        "LH",
+        "Proj"
       ]
     }
   ],
-  "Bio.2": [
-    [
-      {
-        "id": "CSE G1 Bio",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G1",
-          "Bio"
-        ]
-      },
-      {
-        "id": "CSE G2 Bio",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G2",
-          "Bio"
-        ]
-      }
-    ],
-    {
-      "id": "Dr. Ghosh",
-      "tags": [
-        "Bio"
-      ]
-    },
-    {
-      "day": 1,
-      "hour": 0,
-      "duration": 1
-    },
-    {
-      "id": "LH-F1",
-      "capacity": 100,
-      "tags": [
-        "LH"
-      ]
-    }
-  ],
-  "Bio.3": [
+  "Bio.1": [
     [
       {
         "id": "CSE G1 Bio",
@@ -782,10 +707,93 @@
       "duration": 1
     },
     {
-      "id": "LH-F1",
+      "id": "LH-F2",
       "capacity": 100,
       "tags": [
-        "LH"
+        "LH",
+        "Proj"
+      ]
+    }
+  ],
+  "Bio.2": [
+    [
+      {
+        "id": "CSE G1 Bio",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "CSE G2 Bio",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G2",
+          "Bio"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Ghosh",
+      "tags": [
+        "Bio"
+      ]
+    },
+    {
+      "day": 4,
+      "hour": 0,
+      "duration": 1
+    },
+    {
+      "id": "LH-F2",
+      "capacity": 100,
+      "tags": [
+        "LH",
+        "Proj"
+      ]
+    }
+  ],
+  "Bio.3": [
+    [
+      {
+        "id": "CSE G1 Bio",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "CSE G2 Bio",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G2",
+          "Bio"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Ghosh",
+      "tags": [
+        "Bio"
+      ]
+    },
+    {
+      "day": 1,
+      "hour": 0,
+      "duration": 1
+    },
+    {
+      "id": "LH-F2",
+      "capacity": 100,
+      "tags": [
+        "LH",
+        "Proj"
       ]
     }
   ],
@@ -817,15 +825,16 @@
       ]
     },
     {
-      "day": 1,
-      "hour": 2,
+      "day": 4,
+      "hour": 1,
       "duration": 1
     },
     {
-      "id": "LH-F1",
+      "id": "LH-F2",
       "capacity": 100,
       "tags": [
-        "LH"
+        "LH",
+        "Proj"
       ]
     }
   ],
@@ -858,14 +867,15 @@
     },
     {
       "day": 2,
-      "hour": 2,
+      "hour": 5,
       "duration": 1
     },
     {
-      "id": "LH-F1",
+      "id": "LH-F2",
       "capacity": 100,
       "tags": [
-        "LH"
+        "LH",
+        "Proj"
       ]
     }
   ],
@@ -897,15 +907,16 @@
       ]
     },
     {
-      "day": 3,
-      "hour": 2,
+      "day": 1,
+      "hour": 5,
       "duration": 1
     },
     {
-      "id": "LH-F1",
+      "id": "LH-F2",
       "capacity": 100,
       "tags": [
-        "LH"
+        "LH",
+        "Proj"
       ]
     }
   ],
@@ -937,15 +948,16 @@
       ]
     },
     {
-      "day": 4,
-      "hour": 2,
+      "day": 3,
+      "hour": 1,
       "duration": 1
     },
     {
-      "id": "LH-F1",
+      "id": "LH-F2",
       "capacity": 100,
       "tags": [
-        "LH"
+        "LH",
+        "Proj"
       ]
     }
   ]
