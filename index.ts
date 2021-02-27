@@ -70,11 +70,6 @@ const t = new TimeSched({
             capacity: 100
         },
         {
-            id: 'LH-3',
-            tags: ['LH'],
-            capacity: 100
-        },
-        {
             id: 'Lab',
             tags: ['Lab'],
             capacity: 100
@@ -220,14 +215,14 @@ const t = new TimeSched({
         [  0,  0,  0,  0,  2],
     ],
     config: {
-        steps: 100000,
+        steps: 200000,
         optimiser: (a) => new HillClimbN(a, 10),
     }
 });
 
-let max = -Infinity;
+let max = 0;
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 50; i++) {
     console.log("Run", i+1, "\n");
     max = Math.max(max, t.run(max, 1000));
 }
