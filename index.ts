@@ -6,34 +6,48 @@ const t = new TimeSched({
     hours: 6,
     Students: [
         {
-            id: "CSE G1 Bio",
-            strength: 25,
-            tags: ['CSE', 'G1', 'Bio'],
+            id: 'CSE Y1 B',
+            strength: 50,
+            tags: ['CSE', 'Y1', 'Bio']
         },
         {
-            id: "CSE G2 Bio",
-            strength: 25,
-            tags: ['CSE', 'G2', 'Bio'],
+            id: 'CSE Y1 E',
+            strength: 50,
+            tags: ['CSE', 'Y1', 'Econ']
         },
         {
-            id: "CSE G1 Econ",
-            strength: 25,
-            tags: ['CSE', 'G1', 'Econ'],
+            id: 'CSE Y2 G1',
+            strength: 50,
+            tags: ['CSE', 'Y2', 'G1']
         },
         {
-            id: "CSE G2 Econ",
-            strength: 25,
-            tags: ['CSE', 'G2', 'Econ'],
+            id: 'CSE Y2 G2',
+            strength: 50,
+            tags: ['CSE', 'Y2', 'G2']
+        },
+        {
+            id: 'ECE Y1 B',
+            strength: 50,
+            tags: ['ECE', 'Y1', 'Bio']
+        },
+        {
+            id: 'ECE Y1 E',
+            strength: 50,
+            tags: ['ECE', 'Y1', 'Econ']
         }
     ],
     Faculties: [
         {
-            id: 'Dr. Vats',
-            tags: ['Math']
+            id: 'Dr. S Chand',
+            tags: ['Physics', 'Math']
         },
         {
-            id: 'Dr. Pradeep',
-            tags: ['CSE']
+            id: 'Dr. Priyanka',
+            tags: ['CSE', 'Lab', 'C++', 'OS']
+        },
+        {
+            id: 'Dr. Amit',
+            tags: ['ECE', 'Microprocessors']
         },
         {
             id: 'Dr. Manoj',
@@ -42,110 +56,156 @@ const t = new TimeSched({
         {
             id: 'Dr. Ghosh',
             tags: ['Bio']
-        },
-        {
-            id: 'Dr. Nitin',
-            tags: ['Lab']
-        },
+        }
     ],
     Rooms: [
         {
-            id: 'LH-F1',
-            capacity: 100,
-            tags: ['LH']
+            id: 'LH-1',
+            tags: ['LH', 'Proj'],
+            capacity: 100
         },
         {
-            id: 'LH-F2',
-            capacity: 100,
-            tags: ['LH', 'Proj']
+            id: 'LH-2',
+            tags: ['LH'],
+            capacity: 100
         },
         {
-            id: 'Comp Lab',
-            capacity: 100,
-            tags: ['Lab']
-        }
+            id: 'LH-3',
+            tags: ['LH'],
+            capacity: 100
+        },
+        {
+            id: 'Lab',
+            tags: ['Lab'],
+            capacity: 100
+        },
     ],
-    ExtraResources: [],
     Courses: [
         {
             name: 'C++',
-            studentsRequired: (s) => s.tags.includes('CSE'),
-            facultyRequired: (f) => f.tags.includes('CSE'),
-            roomsRequired: (r) => r.tags.includes('LH'),
-            timeSlotRequired: (t) => t.duration == 1 && t.hour < 3,
-            extraResourcesRequired: [],
             weeklyFrequency: 4,
+            studentsRequired: (s) => s.tags.includes('CSE') && s.tags.includes('Y1'),
+            roomsRequired: (r) => r.tags.includes('LH') && r.tags.includes('Proj'),
+            facultyRequired: (f) => f.tags.includes('C++'),
+            timeSlotRequired: (t) => t.duration == 1,
+            extraResourcesRequired: [],
+        },
+        {
+            name: 'Physics.CSE',
+            weeklyFrequency: 4,
+            studentsRequired: (s) => s.tags.includes('CSE') && s.tags.includes('Y1'),
+            roomsRequired: (r) => r.tags.includes('LH') && r.tags.includes('Proj'),
+            facultyRequired: (f) => f.tags.includes('Physics'),
+            timeSlotRequired: (t) => t.duration == 1,
+            extraResourcesRequired: [],
+        },
+        {
+            name: 'C++ Lab',
+            weeklyFrequency: 1,
+            studentsRequired: (s) => s.tags.includes('CSE') && s.tags.includes('Y1'),
+            roomsRequired: (r) => r.tags.includes('Lab'),
+            facultyRequired: (f) => f.tags.includes('C++'),
+            timeSlotRequired: (t) => t.duration == 2,
+            extraResourcesRequired: [],
+        },
+        {
+            name: 'Economics',
+            weeklyFrequency: 4,
+            studentsRequired: (s) => s.tags.includes('Econ'),
+            roomsRequired: (r) => r.tags.includes('LH'),
+            facultyRequired: (f) => f.tags.includes('Econ'),
+            timeSlotRequired: (t) => t.duration == 1,
+            extraResourcesRequired: [],
+        },
+        {
+            name: 'Biology',
+            weeklyFrequency: 4,
+            studentsRequired: (s) => s.tags.includes('Bio'),
+            roomsRequired: (r) => r.tags.includes('LH'),
+            facultyRequired: (f) => f.tags.includes('Bio'),
+            timeSlotRequired: (t) => t.duration == 1,
+            extraResourcesRequired: [],
+        },
+        {
+            name: 'Physics.ECE',
+            weeklyFrequency: 4,
+            studentsRequired: (s) => s.tags.includes('ECE'),
+            roomsRequired: (r) => r.tags.includes('LH') && r.tags.includes('Proj'),
+            facultyRequired: (f) => f.tags.includes('Physics'),
+            timeSlotRequired: (t) => t.duration == 1,
+            extraResourcesRequired: [],
+        },
+        {
+            name: 'Microprocessors.ECE',
+            weeklyFrequency: 4,
+            studentsRequired: (s) => s.tags.includes('ECE'),
+            roomsRequired: (r) => r.tags.includes('LH'),
+            facultyRequired: (f) => f.tags.includes('ECE'),
+            timeSlotRequired: (t) => t.duration == 1,
+            extraResourcesRequired: [],
+        },
+        {
+            name: 'Micro Lab.ECE',
+            weeklyFrequency: 1,
+            studentsRequired: (s) => s.tags.includes('ECE'),
+            roomsRequired: (r) => r.tags.includes('Lab'),
+            facultyRequired: (f) => f.tags.includes('ECE'),
+            timeSlotRequired: (t) => t.duration == 2,
+            extraResourcesRequired: [],
+        },
+        {
+            name: 'Microprocessors.CSE',
+            weeklyFrequency: 4,
+            studentsRequired: (s) => s.tags.includes('CSE') && s.tags.includes('Y2'),
+            roomsRequired: (r) => r.tags.includes('LH'),
+            facultyRequired: (f) => f.tags.includes('ECE'),
+            timeSlotRequired: (t) => t.duration == 1,
+            extraResourcesRequired: [],
+        },
+        {
+            name: 'Micro Lab.CSE G1',
+            weeklyFrequency: 1,
+            studentsRequired: (s) => s.tags.includes('CSE') && s.tags.includes('Y2') && s.tags.includes('G1'),
+            roomsRequired: (r) => r.tags.includes('Lab'),
+            facultyRequired: (f) => f.tags.includes('ECE'),
+            timeSlotRequired: (t) => t.duration == 2,
+            extraResourcesRequired: [],
+        },
+        {
+            name: 'Micro Lab.CSE G2',
+            weeklyFrequency: 1,
+            studentsRequired: (s) => s.tags.includes('CSE') && s.tags.includes('Y2') && s.tags.includes('G2'),
+            roomsRequired: (r) => r.tags.includes('Lab'),
+            facultyRequired: (f) => f.tags.includes('ECE'),
+            timeSlotRequired: (t) => t.duration == 2,
+            extraResourcesRequired: [],
+        },
+        {
+            name: 'Operating Systems',
+            weeklyFrequency: 4,
+            studentsRequired: (s) => s.tags.includes('CSE') && s.tags.includes('Y2'),
+            roomsRequired: (r) => r.tags.includes('LH'),
+            facultyRequired: (f) => f.tags.includes('OS'),
+            timeSlotRequired: (t) => t.duration == 1,
+            extraResourcesRequired: [],
         },
         {
             name: 'Math',
-            studentsRequired: (s) => s.tags.includes('CSE'),
+            weeklyFrequency: 4,
+            studentsRequired: (s) => s.tags.includes('CSE') && s.tags.includes('Y2'),
+            roomsRequired: (r) => r.tags.includes('LH'),
             facultyRequired: (f) => f.tags.includes('Math'),
-            roomsRequired: (r) => r.tags.includes('LH'),
             timeSlotRequired: (t) => t.duration == 1,
             extraResourcesRequired: [],
-            weeklyFrequency: 4,
-        },
-        {
-            name: 'C++ Tute G1',
-            studentsRequired: (s) => s.tags.includes('CSE') && s.tags.includes('G1'),
-            facultyRequired: (f) => f.tags.includes('Lab'),
-            roomsRequired: (r) => r.tags.includes('Proj'),
-            timeSlotRequired: (t) => t.duration == 1,
-            extraResourcesRequired: [],
-            weeklyFrequency: 1,
-        },
-        {
-            name: 'C++ Tute G2',
-            studentsRequired: (s) => s.tags.includes('CSE') && s.tags.includes('G2'),
-            facultyRequired: (f) => f.tags.includes('Lab'),
-            roomsRequired: (r) => r.tags.includes('Proj'),
-            timeSlotRequired: (t) => t.duration == 1,
-            extraResourcesRequired: [],
-            weeklyFrequency: 1,
-        },
-        {
-            name: 'C++ Lab G1',
-            studentsRequired: (s) => s.tags.includes('CSE') && s.tags.includes('G1'),
-            facultyRequired: (f) => f.tags.includes('Lab'),
-            roomsRequired: (r) => r.tags.includes('Lab'),
-            timeSlotRequired: (t) => t.duration == 3,
-            extraResourcesRequired: [],
-            weeklyFrequency: 1,
-        },
-        {
-            name: 'C++ Lab G2',
-            studentsRequired: (s) => s.tags.includes('CSE') && s.tags.includes('G2'),
-            facultyRequired: (f) => f.tags.includes('Lab'),
-            roomsRequired: (r) => r.tags.includes('Lab'),
-            timeSlotRequired: (t) => t.duration == 3,
-            extraResourcesRequired: [],
-            weeklyFrequency: 1,
-        },
-        {
-            name: 'Bio',
-            studentsRequired: (s) => s.tags.includes('Bio'),
-            facultyRequired: (f) => f.tags.includes('Bio'),
-            roomsRequired: (r) => r.tags.includes('LH'),
-            timeSlotRequired: (t) => t.duration == 1,
-            extraResourcesRequired: [],
-            weeklyFrequency: 4,
-        },
-        {
-            name: 'Econ',
-            studentsRequired: (s) => s.tags.includes('Econ'),
-            facultyRequired: (f) => f.tags.includes('Econ'),
-            roomsRequired: (r) => r.tags.includes('LH'),
-            timeSlotRequired: (t) => t.duration == 1,
-            extraResourcesRequired: [],
-            weeklyFrequency: 4,
         },
     ],
+    ExtraResources: [],
     lunchHours: [2, 3],
     penalties: {
         nolunch: 500,
         lateday: 500,
-        overlap: 1000,
-        repeatSubject: 200,
+        overlap: 5000,
+        repeatSubject: 500,
         consistencyBonusSub: 100,
         consistencyBonusRoom: 10,
         consistencyBonusFac: 10,
@@ -155,7 +215,7 @@ const t = new TimeSched({
         [  0,  0,  0,  0,  0],
         [  0,  0,  0,  0,  0],
         [  0,  0,  0,  0,  0],
-        [  0,  0,  0,  0,  2],
+        [  0,  0,  0,  0,  0],
         [  0,  0,  0,  0,  2],
         [  0,  0,  0,  0,  2],
     ],

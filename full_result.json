@@ -2,223 +2,1037 @@
   "C++.0": [
     [
       {
-        "id": "CSE G1 Bio",
-        "strength": 25,
+        "id": "CSE Y1 B",
+        "strength": 50,
         "tags": [
           "CSE",
-          "G1",
+          "Y1",
           "Bio"
         ]
       },
       {
-        "id": "CSE G2 Bio",
-        "strength": 25,
+        "id": "CSE Y1 E",
+        "strength": 50,
         "tags": [
           "CSE",
-          "G2",
-          "Bio"
-        ]
-      },
-      {
-        "id": "CSE G1 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G1",
-          "Econ"
-        ]
-      },
-      {
-        "id": "CSE G2 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G2",
+          "Y1",
           "Econ"
         ]
       }
     ],
     {
-      "id": "Dr. Pradeep",
+      "id": "Dr. Priyanka",
       "tags": [
-        "CSE"
+        "CSE",
+        "Lab",
+        "C++",
+        "OS"
       ]
     },
     {
-      "day": 2,
-      "hour": 2,
+      "day": 4,
+      "hour": 1,
       "duration": 1
     },
     {
-      "id": "LH-F2",
-      "capacity": 100,
+      "id": "LH-1",
       "tags": [
         "LH",
         "Proj"
-      ]
+      ],
+      "capacity": 100
     }
   ],
   "C++.1": [
     [
       {
-        "id": "CSE G1 Bio",
-        "strength": 25,
+        "id": "CSE Y1 B",
+        "strength": 50,
         "tags": [
           "CSE",
-          "G1",
+          "Y1",
           "Bio"
         ]
       },
       {
-        "id": "CSE G2 Bio",
-        "strength": 25,
+        "id": "CSE Y1 E",
+        "strength": 50,
         "tags": [
           "CSE",
-          "G2",
-          "Bio"
-        ]
-      },
-      {
-        "id": "CSE G1 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G1",
-          "Econ"
-        ]
-      },
-      {
-        "id": "CSE G2 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G2",
+          "Y1",
           "Econ"
         ]
       }
     ],
     {
-      "id": "Dr. Pradeep",
+      "id": "Dr. Priyanka",
       "tags": [
-        "CSE"
+        "CSE",
+        "Lab",
+        "C++",
+        "OS"
       ]
     },
     {
-      "day": 4,
-      "hour": 2,
+      "day": 2,
+      "hour": 1,
       "duration": 1
     },
     {
-      "id": "LH-F2",
-      "capacity": 100,
+      "id": "LH-1",
       "tags": [
         "LH",
         "Proj"
-      ]
+      ],
+      "capacity": 100
     }
   ],
   "C++.2": [
     [
       {
-        "id": "CSE G1 Bio",
-        "strength": 25,
+        "id": "CSE Y1 B",
+        "strength": 50,
         "tags": [
           "CSE",
-          "G1",
+          "Y1",
           "Bio"
         ]
       },
       {
-        "id": "CSE G2 Bio",
-        "strength": 25,
+        "id": "CSE Y1 E",
+        "strength": 50,
         "tags": [
           "CSE",
-          "G2",
-          "Bio"
-        ]
-      },
-      {
-        "id": "CSE G1 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G1",
-          "Econ"
-        ]
-      },
-      {
-        "id": "CSE G2 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G2",
+          "Y1",
           "Econ"
         ]
       }
     ],
     {
-      "id": "Dr. Pradeep",
+      "id": "Dr. Priyanka",
       "tags": [
-        "CSE"
+        "CSE",
+        "Lab",
+        "C++",
+        "OS"
       ]
     },
     {
       "day": 3,
-      "hour": 2,
+      "hour": 1,
       "duration": 1
     },
     {
-      "id": "LH-F2",
-      "capacity": 100,
+      "id": "LH-1",
       "tags": [
         "LH",
         "Proj"
-      ]
+      ],
+      "capacity": 100
     }
   ],
   "C++.3": [
     [
       {
-        "id": "CSE G1 Bio",
-        "strength": 25,
+        "id": "CSE Y1 B",
+        "strength": 50,
         "tags": [
           "CSE",
-          "G1",
+          "Y1",
           "Bio"
         ]
       },
       {
-        "id": "CSE G2 Bio",
-        "strength": 25,
+        "id": "CSE Y1 E",
+        "strength": 50,
         "tags": [
           "CSE",
-          "G2",
-          "Bio"
-        ]
-      },
-      {
-        "id": "CSE G1 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G1",
-          "Econ"
-        ]
-      },
-      {
-        "id": "CSE G2 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G2",
+          "Y1",
           "Econ"
         ]
       }
     ],
     {
-      "id": "Dr. Pradeep",
+      "id": "Dr. Priyanka",
       "tags": [
-        "CSE"
+        "CSE",
+        "Lab",
+        "C++",
+        "OS"
+      ]
+    },
+    {
+      "day": 1,
+      "hour": 1,
+      "duration": 1
+    },
+    {
+      "id": "LH-1",
+      "tags": [
+        "LH",
+        "Proj"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Physics.CSE.0": [
+    [
+      {
+        "id": "CSE Y1 B",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "CSE Y1 E",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y1",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. S Chand",
+      "tags": [
+        "Physics",
+        "Math"
+      ]
+    },
+    {
+      "day": 1,
+      "hour": 3,
+      "duration": 1
+    },
+    {
+      "id": "LH-1",
+      "tags": [
+        "LH",
+        "Proj"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Physics.CSE.1": [
+    [
+      {
+        "id": "CSE Y1 B",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "CSE Y1 E",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y1",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. S Chand",
+      "tags": [
+        "Physics",
+        "Math"
+      ]
+    },
+    {
+      "day": 2,
+      "hour": 3,
+      "duration": 1
+    },
+    {
+      "id": "LH-1",
+      "tags": [
+        "LH",
+        "Proj"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Physics.CSE.2": [
+    [
+      {
+        "id": "CSE Y1 B",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "CSE Y1 E",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y1",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. S Chand",
+      "tags": [
+        "Physics",
+        "Math"
+      ]
+    },
+    {
+      "day": 4,
+      "hour": 3,
+      "duration": 1
+    },
+    {
+      "id": "LH-1",
+      "tags": [
+        "LH",
+        "Proj"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Physics.CSE.3": [
+    [
+      {
+        "id": "CSE Y1 B",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "CSE Y1 E",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y1",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. S Chand",
+      "tags": [
+        "Physics",
+        "Math"
+      ]
+    },
+    {
+      "day": 3,
+      "hour": 3,
+      "duration": 1
+    },
+    {
+      "id": "LH-1",
+      "tags": [
+        "LH",
+        "Proj"
+      ],
+      "capacity": 100
+    }
+  ],
+  "C++ Lab.0": [
+    [
+      {
+        "id": "CSE Y1 B",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "CSE Y1 E",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y1",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Priyanka",
+      "tags": [
+        "CSE",
+        "Lab",
+        "C++",
+        "OS"
+      ]
+    },
+    {
+      "day": 1,
+      "hour": 4,
+      "duration": 2
+    },
+    {
+      "id": "Lab",
+      "tags": [
+        "Lab"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Economics.0": [
+    [
+      {
+        "id": "CSE Y1 E",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y1",
+          "Econ"
+        ]
+      },
+      {
+        "id": "ECE Y1 E",
+        "strength": 50,
+        "tags": [
+          "ECE",
+          "Y1",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Manoj",
+      "tags": [
+        "Econ"
+      ]
+    },
+    {
+      "day": 1,
+      "hour": 0,
+      "duration": 1
+    },
+    {
+      "id": "LH-1",
+      "tags": [
+        "LH",
+        "Proj"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Economics.1": [
+    [
+      {
+        "id": "CSE Y1 E",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y1",
+          "Econ"
+        ]
+      },
+      {
+        "id": "ECE Y1 E",
+        "strength": 50,
+        "tags": [
+          "ECE",
+          "Y1",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Manoj",
+      "tags": [
+        "Econ"
+      ]
+    },
+    {
+      "day": 2,
+      "hour": 0,
+      "duration": 1
+    },
+    {
+      "id": "LH-1",
+      "tags": [
+        "LH",
+        "Proj"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Economics.2": [
+    [
+      {
+        "id": "CSE Y1 E",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y1",
+          "Econ"
+        ]
+      },
+      {
+        "id": "ECE Y1 E",
+        "strength": 50,
+        "tags": [
+          "ECE",
+          "Y1",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Manoj",
+      "tags": [
+        "Econ"
+      ]
+    },
+    {
+      "day": 3,
+      "hour": 0,
+      "duration": 1
+    },
+    {
+      "id": "LH-1",
+      "tags": [
+        "LH",
+        "Proj"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Economics.3": [
+    [
+      {
+        "id": "CSE Y1 E",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y1",
+          "Econ"
+        ]
+      },
+      {
+        "id": "ECE Y1 E",
+        "strength": 50,
+        "tags": [
+          "ECE",
+          "Y1",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Manoj",
+      "tags": [
+        "Econ"
+      ]
+    },
+    {
+      "day": 4,
+      "hour": 0,
+      "duration": 1
+    },
+    {
+      "id": "LH-1",
+      "tags": [
+        "LH",
+        "Proj"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Biology.0": [
+    [
+      {
+        "id": "CSE Y1 B",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "ECE Y1 B",
+        "strength": 50,
+        "tags": [
+          "ECE",
+          "Y1",
+          "Bio"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Ghosh",
+      "tags": [
+        "Bio"
+      ]
+    },
+    {
+      "day": 3,
+      "hour": 5,
+      "duration": 1
+    },
+    {
+      "id": "LH-1",
+      "tags": [
+        "LH",
+        "Proj"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Biology.1": [
+    [
+      {
+        "id": "CSE Y1 B",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "ECE Y1 B",
+        "strength": 50,
+        "tags": [
+          "ECE",
+          "Y1",
+          "Bio"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Ghosh",
+      "tags": [
+        "Bio"
+      ]
+    },
+    {
+      "day": 4,
+      "hour": 5,
+      "duration": 1
+    },
+    {
+      "id": "LH-1",
+      "tags": [
+        "LH",
+        "Proj"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Biology.2": [
+    [
+      {
+        "id": "CSE Y1 B",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "ECE Y1 B",
+        "strength": 50,
+        "tags": [
+          "ECE",
+          "Y1",
+          "Bio"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Ghosh",
+      "tags": [
+        "Bio"
+      ]
+    },
+    {
+      "day": 1,
+      "hour": 0,
+      "duration": 1
+    },
+    {
+      "id": "LH-3",
+      "tags": [
+        "LH"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Biology.3": [
+    [
+      {
+        "id": "CSE Y1 B",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "ECE Y1 B",
+        "strength": 50,
+        "tags": [
+          "ECE",
+          "Y1",
+          "Bio"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Ghosh",
+      "tags": [
+        "Bio"
+      ]
+    },
+    {
+      "day": 2,
+      "hour": 5,
+      "duration": 1
+    },
+    {
+      "id": "LH-1",
+      "tags": [
+        "LH",
+        "Proj"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Physics.ECE.0": [
+    [
+      {
+        "id": "ECE Y1 B",
+        "strength": 50,
+        "tags": [
+          "ECE",
+          "Y1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "ECE Y1 E",
+        "strength": 50,
+        "tags": [
+          "ECE",
+          "Y1",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. S Chand",
+      "tags": [
+        "Physics",
+        "Math"
+      ]
+    },
+    {
+      "day": 3,
+      "hour": 4,
+      "duration": 1
+    },
+    {
+      "id": "LH-1",
+      "tags": [
+        "LH",
+        "Proj"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Physics.ECE.1": [
+    [
+      {
+        "id": "ECE Y1 B",
+        "strength": 50,
+        "tags": [
+          "ECE",
+          "Y1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "ECE Y1 E",
+        "strength": 50,
+        "tags": [
+          "ECE",
+          "Y1",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. S Chand",
+      "tags": [
+        "Physics",
+        "Math"
+      ]
+    },
+    {
+      "day": 1,
+      "hour": 4,
+      "duration": 1
+    },
+    {
+      "id": "LH-1",
+      "tags": [
+        "LH",
+        "Proj"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Physics.ECE.2": [
+    [
+      {
+        "id": "ECE Y1 B",
+        "strength": 50,
+        "tags": [
+          "ECE",
+          "Y1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "ECE Y1 E",
+        "strength": 50,
+        "tags": [
+          "ECE",
+          "Y1",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. S Chand",
+      "tags": [
+        "Physics",
+        "Math"
+      ]
+    },
+    {
+      "day": 2,
+      "hour": 4,
+      "duration": 1
+    },
+    {
+      "id": "LH-1",
+      "tags": [
+        "LH",
+        "Proj"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Physics.ECE.3": [
+    [
+      {
+        "id": "ECE Y1 B",
+        "strength": 50,
+        "tags": [
+          "ECE",
+          "Y1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "ECE Y1 E",
+        "strength": 50,
+        "tags": [
+          "ECE",
+          "Y1",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. S Chand",
+      "tags": [
+        "Physics",
+        "Math"
+      ]
+    },
+    {
+      "day": 4,
+      "hour": 4,
+      "duration": 1
+    },
+    {
+      "id": "LH-1",
+      "tags": [
+        "LH",
+        "Proj"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Microprocessors.ECE.0": [
+    [
+      {
+        "id": "ECE Y1 B",
+        "strength": 50,
+        "tags": [
+          "ECE",
+          "Y1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "ECE Y1 E",
+        "strength": 50,
+        "tags": [
+          "ECE",
+          "Y1",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Amit",
+      "tags": [
+        "ECE",
+        "Microprocessors"
+      ]
+    },
+    {
+      "day": 2,
+      "hour": 2,
+      "duration": 1
+    },
+    {
+      "id": "LH-1",
+      "tags": [
+        "LH",
+        "Proj"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Microprocessors.ECE.1": [
+    [
+      {
+        "id": "ECE Y1 B",
+        "strength": 50,
+        "tags": [
+          "ECE",
+          "Y1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "ECE Y1 E",
+        "strength": 50,
+        "tags": [
+          "ECE",
+          "Y1",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Amit",
+      "tags": [
+        "ECE",
+        "Microprocessors"
+      ]
+    },
+    {
+      "day": 3,
+      "hour": 2,
+      "duration": 1
+    },
+    {
+      "id": "LH-1",
+      "tags": [
+        "LH",
+        "Proj"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Microprocessors.ECE.2": [
+    [
+      {
+        "id": "ECE Y1 B",
+        "strength": 50,
+        "tags": [
+          "ECE",
+          "Y1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "ECE Y1 E",
+        "strength": 50,
+        "tags": [
+          "ECE",
+          "Y1",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Amit",
+      "tags": [
+        "ECE",
+        "Microprocessors"
+      ]
+    },
+    {
+      "day": 4,
+      "hour": 2,
+      "duration": 1
+    },
+    {
+      "id": "LH-1",
+      "tags": [
+        "LH",
+        "Proj"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Microprocessors.ECE.3": [
+    [
+      {
+        "id": "ECE Y1 B",
+        "strength": 50,
+        "tags": [
+          "ECE",
+          "Y1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "ECE Y1 E",
+        "strength": 50,
+        "tags": [
+          "ECE",
+          "Y1",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Amit",
+      "tags": [
+        "ECE",
+        "Microprocessors"
       ]
     },
     {
@@ -227,738 +1041,617 @@
       "duration": 1
     },
     {
-      "id": "LH-F2",
-      "capacity": 100,
+      "id": "LH-1",
       "tags": [
         "LH",
         "Proj"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Micro Lab.ECE.0": [
+    [
+      {
+        "id": "ECE Y1 B",
+        "strength": 50,
+        "tags": [
+          "ECE",
+          "Y1",
+          "Bio"
+        ]
+      },
+      {
+        "id": "ECE Y1 E",
+        "strength": 50,
+        "tags": [
+          "ECE",
+          "Y1",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Amit",
+      "tags": [
+        "ECE",
+        "Microprocessors"
       ]
+    },
+    {
+      "day": 0,
+      "hour": 4,
+      "duration": 2
+    },
+    {
+      "id": "Lab",
+      "tags": [
+        "Lab"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Microprocessors.CSE.0": [
+    [
+      {
+        "id": "CSE Y2 G1",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y2",
+          "G1"
+        ]
+      },
+      {
+        "id": "CSE Y2 G2",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y2",
+          "G2"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Amit",
+      "tags": [
+        "ECE",
+        "Microprocessors"
+      ]
+    },
+    {
+      "day": 1,
+      "hour": 1,
+      "duration": 1
+    },
+    {
+      "id": "LH-3",
+      "tags": [
+        "LH"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Microprocessors.CSE.1": [
+    [
+      {
+        "id": "CSE Y2 G1",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y2",
+          "G1"
+        ]
+      },
+      {
+        "id": "CSE Y2 G2",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y2",
+          "G2"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Amit",
+      "tags": [
+        "ECE",
+        "Microprocessors"
+      ]
+    },
+    {
+      "day": 2,
+      "hour": 1,
+      "duration": 1
+    },
+    {
+      "id": "LH-3",
+      "tags": [
+        "LH"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Microprocessors.CSE.2": [
+    [
+      {
+        "id": "CSE Y2 G1",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y2",
+          "G1"
+        ]
+      },
+      {
+        "id": "CSE Y2 G2",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y2",
+          "G2"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Amit",
+      "tags": [
+        "ECE",
+        "Microprocessors"
+      ]
+    },
+    {
+      "day": 3,
+      "hour": 1,
+      "duration": 1
+    },
+    {
+      "id": "LH-3",
+      "tags": [
+        "LH"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Microprocessors.CSE.3": [
+    [
+      {
+        "id": "CSE Y2 G1",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y2",
+          "G1"
+        ]
+      },
+      {
+        "id": "CSE Y2 G2",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y2",
+          "G2"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Amit",
+      "tags": [
+        "ECE",
+        "Microprocessors"
+      ]
+    },
+    {
+      "day": 4,
+      "hour": 1,
+      "duration": 1
+    },
+    {
+      "id": "LH-3",
+      "tags": [
+        "LH"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Micro Lab.CSE G1.0": [
+    [
+      {
+        "id": "CSE Y2 G1",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y2",
+          "G1"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Amit",
+      "tags": [
+        "ECE",
+        "Microprocessors"
+      ]
+    },
+    {
+      "day": 3,
+      "hour": 4,
+      "duration": 2
+    },
+    {
+      "id": "Lab",
+      "tags": [
+        "Lab"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Micro Lab.CSE G2.0": [
+    [
+      {
+        "id": "CSE Y2 G2",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y2",
+          "G2"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Amit",
+      "tags": [
+        "ECE",
+        "Microprocessors"
+      ]
+    },
+    {
+      "day": 0,
+      "hour": 1,
+      "duration": 2
+    },
+    {
+      "id": "Lab",
+      "tags": [
+        "Lab"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Operating Systems.0": [
+    [
+      {
+        "id": "CSE Y2 G1",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y2",
+          "G1"
+        ]
+      },
+      {
+        "id": "CSE Y2 G2",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y2",
+          "G2"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Priyanka",
+      "tags": [
+        "CSE",
+        "Lab",
+        "C++",
+        "OS"
+      ]
+    },
+    {
+      "day": 2,
+      "hour": 2,
+      "duration": 1
+    },
+    {
+      "id": "LH-3",
+      "tags": [
+        "LH"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Operating Systems.1": [
+    [
+      {
+        "id": "CSE Y2 G1",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y2",
+          "G1"
+        ]
+      },
+      {
+        "id": "CSE Y2 G2",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y2",
+          "G2"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Priyanka",
+      "tags": [
+        "CSE",
+        "Lab",
+        "C++",
+        "OS"
+      ]
+    },
+    {
+      "day": 4,
+      "hour": 2,
+      "duration": 1
+    },
+    {
+      "id": "LH-3",
+      "tags": [
+        "LH"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Operating Systems.2": [
+    [
+      {
+        "id": "CSE Y2 G1",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y2",
+          "G1"
+        ]
+      },
+      {
+        "id": "CSE Y2 G2",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y2",
+          "G2"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Priyanka",
+      "tags": [
+        "CSE",
+        "Lab",
+        "C++",
+        "OS"
+      ]
+    },
+    {
+      "day": 3,
+      "hour": 2,
+      "duration": 1
+    },
+    {
+      "id": "LH-3",
+      "tags": [
+        "LH"
+      ],
+      "capacity": 100
+    }
+  ],
+  "Operating Systems.3": [
+    [
+      {
+        "id": "CSE Y2 G1",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y2",
+          "G1"
+        ]
+      },
+      {
+        "id": "CSE Y2 G2",
+        "strength": 50,
+        "tags": [
+          "CSE",
+          "Y2",
+          "G2"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Priyanka",
+      "tags": [
+        "CSE",
+        "Lab",
+        "C++",
+        "OS"
+      ]
+    },
+    {
+      "day": 1,
+      "hour": 2,
+      "duration": 1
+    },
+    {
+      "id": "LH-3",
+      "tags": [
+        "LH"
+      ],
+      "capacity": 100
     }
   ],
   "Math.0": [
     [
       {
-        "id": "CSE G1 Bio",
-        "strength": 25,
+        "id": "CSE Y2 G1",
+        "strength": 50,
         "tags": [
           "CSE",
-          "G1",
-          "Bio"
+          "Y2",
+          "G1"
         ]
       },
       {
-        "id": "CSE G2 Bio",
-        "strength": 25,
+        "id": "CSE Y2 G2",
+        "strength": 50,
         "tags": [
           "CSE",
-          "G2",
-          "Bio"
-        ]
-      },
-      {
-        "id": "CSE G1 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G1",
-          "Econ"
-        ]
-      },
-      {
-        "id": "CSE G2 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G2",
-          "Econ"
+          "Y2",
+          "G2"
         ]
       }
     ],
     {
-      "id": "Dr. Vats",
+      "id": "Dr. S Chand",
       "tags": [
+        "Physics",
         "Math"
       ]
     },
     {
       "day": 2,
-      "hour": 4,
+      "hour": 5,
       "duration": 1
     },
     {
-      "id": "LH-F2",
-      "capacity": 100,
+      "id": "LH-2",
       "tags": [
-        "LH",
-        "Proj"
-      ]
+        "LH"
+      ],
+      "capacity": 100
     }
   ],
   "Math.1": [
     [
       {
-        "id": "CSE G1 Bio",
-        "strength": 25,
+        "id": "CSE Y2 G1",
+        "strength": 50,
         "tags": [
           "CSE",
-          "G1",
-          "Bio"
+          "Y2",
+          "G1"
         ]
       },
       {
-        "id": "CSE G2 Bio",
-        "strength": 25,
+        "id": "CSE Y2 G2",
+        "strength": 50,
         "tags": [
           "CSE",
-          "G2",
-          "Bio"
-        ]
-      },
-      {
-        "id": "CSE G1 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G1",
-          "Econ"
-        ]
-      },
-      {
-        "id": "CSE G2 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G2",
-          "Econ"
+          "Y2",
+          "G2"
         ]
       }
     ],
     {
-      "id": "Dr. Vats",
+      "id": "Dr. S Chand",
       "tags": [
+        "Physics",
         "Math"
       ]
     },
     {
-      "day": 4,
-      "hour": 4,
+      "day": 0,
+      "hour": 5,
       "duration": 1
     },
     {
-      "id": "LH-F2",
-      "capacity": 100,
+      "id": "LH-2",
       "tags": [
-        "LH",
-        "Proj"
-      ]
+        "LH"
+      ],
+      "capacity": 100
     }
   ],
   "Math.2": [
     [
       {
-        "id": "CSE G1 Bio",
-        "strength": 25,
+        "id": "CSE Y2 G1",
+        "strength": 50,
         "tags": [
           "CSE",
-          "G1",
-          "Bio"
+          "Y2",
+          "G1"
         ]
       },
       {
-        "id": "CSE G2 Bio",
-        "strength": 25,
+        "id": "CSE Y2 G2",
+        "strength": 50,
         "tags": [
           "CSE",
-          "G2",
-          "Bio"
-        ]
-      },
-      {
-        "id": "CSE G1 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G1",
-          "Econ"
-        ]
-      },
-      {
-        "id": "CSE G2 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G2",
-          "Econ"
+          "Y2",
+          "G2"
         ]
       }
     ],
     {
-      "id": "Dr. Vats",
+      "id": "Dr. S Chand",
       "tags": [
+        "Physics",
         "Math"
       ]
     },
     {
-      "day": 3,
-      "hour": 4,
+      "day": 1,
+      "hour": 5,
       "duration": 1
     },
     {
-      "id": "LH-F2",
-      "capacity": 100,
+      "id": "LH-2",
       "tags": [
-        "LH",
-        "Proj"
-      ]
+        "LH"
+      ],
+      "capacity": 100
     }
   ],
   "Math.3": [
     [
       {
-        "id": "CSE G1 Bio",
-        "strength": 25,
+        "id": "CSE Y2 G1",
+        "strength": 50,
         "tags": [
           "CSE",
-          "G1",
-          "Bio"
+          "Y2",
+          "G1"
         ]
       },
       {
-        "id": "CSE G2 Bio",
-        "strength": 25,
+        "id": "CSE Y2 G2",
+        "strength": 50,
         "tags": [
           "CSE",
-          "G2",
-          "Bio"
-        ]
-      },
-      {
-        "id": "CSE G1 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G1",
-          "Econ"
-        ]
-      },
-      {
-        "id": "CSE G2 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G2",
-          "Econ"
+          "Y2",
+          "G2"
         ]
       }
     ],
     {
-      "id": "Dr. Vats",
+      "id": "Dr. S Chand",
       "tags": [
+        "Physics",
         "Math"
       ]
     },
     {
-      "day": 1,
-      "hour": 4,
-      "duration": 1
-    },
-    {
-      "id": "LH-F2",
-      "capacity": 100,
-      "tags": [
-        "LH",
-        "Proj"
-      ]
-    }
-  ],
-  "C++ Tute G1.0": [
-    [
-      {
-        "id": "CSE G1 Bio",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G1",
-          "Bio"
-        ]
-      },
-      {
-        "id": "CSE G1 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G1",
-          "Econ"
-        ]
-      }
-    ],
-    {
-      "id": "Dr. Nitin",
-      "tags": [
-        "Lab"
-      ]
-    },
-    {
-      "day": 1,
-      "hour": 1,
-      "duration": 1
-    },
-    {
-      "id": "LH-F2",
-      "capacity": 100,
-      "tags": [
-        "LH",
-        "Proj"
-      ]
-    }
-  ],
-  "C++ Tute G2.0": [
-    [
-      {
-        "id": "CSE G2 Bio",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G2",
-          "Bio"
-        ]
-      },
-      {
-        "id": "CSE G2 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G2",
-          "Econ"
-        ]
-      }
-    ],
-    {
-      "id": "Dr. Nitin",
-      "tags": [
-        "Lab"
-      ]
-    },
-    {
-      "day": 2,
-      "hour": 1,
-      "duration": 1
-    },
-    {
-      "id": "LH-F2",
-      "capacity": 100,
-      "tags": [
-        "LH",
-        "Proj"
-      ]
-    }
-  ],
-  "C++ Lab G1.0": [
-    [
-      {
-        "id": "CSE G1 Bio",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G1",
-          "Bio"
-        ]
-      },
-      {
-        "id": "CSE G1 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G1",
-          "Econ"
-        ]
-      }
-    ],
-    {
-      "id": "Dr. Nitin",
-      "tags": [
-        "Lab"
-      ]
-    },
-    {
-      "day": 0,
-      "hour": 0,
-      "duration": 3
-    },
-    {
-      "id": "Comp Lab",
-      "capacity": 100,
-      "tags": [
-        "Lab"
-      ]
-    }
-  ],
-  "C++ Lab G2.0": [
-    [
-      {
-        "id": "CSE G2 Bio",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G2",
-          "Bio"
-        ]
-      },
-      {
-        "id": "CSE G2 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G2",
-          "Econ"
-        ]
-      }
-    ],
-    {
-      "id": "Dr. Nitin",
-      "tags": [
-        "Lab"
-      ]
-    },
-    {
-      "day": 0,
-      "hour": 3,
-      "duration": 3
-    },
-    {
-      "id": "Comp Lab",
-      "capacity": 100,
-      "tags": [
-        "Lab"
-      ]
-    }
-  ],
-  "Bio.0": [
-    [
-      {
-        "id": "CSE G1 Bio",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G1",
-          "Bio"
-        ]
-      },
-      {
-        "id": "CSE G2 Bio",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G2",
-          "Bio"
-        ]
-      }
-    ],
-    {
-      "id": "Dr. Ghosh",
-      "tags": [
-        "Bio"
-      ]
-    },
-    {
-      "day": 2,
-      "hour": 0,
-      "duration": 1
-    },
-    {
-      "id": "LH-F2",
-      "capacity": 100,
-      "tags": [
-        "LH",
-        "Proj"
-      ]
-    }
-  ],
-  "Bio.1": [
-    [
-      {
-        "id": "CSE G1 Bio",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G1",
-          "Bio"
-        ]
-      },
-      {
-        "id": "CSE G2 Bio",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G2",
-          "Bio"
-        ]
-      }
-    ],
-    {
-      "id": "Dr. Ghosh",
-      "tags": [
-        "Bio"
-      ]
-    },
-    {
-      "day": 3,
-      "hour": 0,
-      "duration": 1
-    },
-    {
-      "id": "LH-F2",
-      "capacity": 100,
-      "tags": [
-        "LH",
-        "Proj"
-      ]
-    }
-  ],
-  "Bio.2": [
-    [
-      {
-        "id": "CSE G1 Bio",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G1",
-          "Bio"
-        ]
-      },
-      {
-        "id": "CSE G2 Bio",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G2",
-          "Bio"
-        ]
-      }
-    ],
-    {
-      "id": "Dr. Ghosh",
-      "tags": [
-        "Bio"
-      ]
-    },
-    {
       "day": 4,
-      "hour": 0,
-      "duration": 1
-    },
-    {
-      "id": "LH-F2",
-      "capacity": 100,
-      "tags": [
-        "LH",
-        "Proj"
-      ]
-    }
-  ],
-  "Bio.3": [
-    [
-      {
-        "id": "CSE G1 Bio",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G1",
-          "Bio"
-        ]
-      },
-      {
-        "id": "CSE G2 Bio",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G2",
-          "Bio"
-        ]
-      }
-    ],
-    {
-      "id": "Dr. Ghosh",
-      "tags": [
-        "Bio"
-      ]
-    },
-    {
-      "day": 1,
-      "hour": 0,
-      "duration": 1
-    },
-    {
-      "id": "LH-F2",
-      "capacity": 100,
-      "tags": [
-        "LH",
-        "Proj"
-      ]
-    }
-  ],
-  "Econ.0": [
-    [
-      {
-        "id": "CSE G1 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G1",
-          "Econ"
-        ]
-      },
-      {
-        "id": "CSE G2 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G2",
-          "Econ"
-        ]
-      }
-    ],
-    {
-      "id": "Dr. Manoj",
-      "tags": [
-        "Econ"
-      ]
-    },
-    {
-      "day": 4,
-      "hour": 1,
-      "duration": 1
-    },
-    {
-      "id": "LH-F2",
-      "capacity": 100,
-      "tags": [
-        "LH",
-        "Proj"
-      ]
-    }
-  ],
-  "Econ.1": [
-    [
-      {
-        "id": "CSE G1 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G1",
-          "Econ"
-        ]
-      },
-      {
-        "id": "CSE G2 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G2",
-          "Econ"
-        ]
-      }
-    ],
-    {
-      "id": "Dr. Manoj",
-      "tags": [
-        "Econ"
-      ]
-    },
-    {
-      "day": 2,
       "hour": 5,
       "duration": 1
     },
     {
-      "id": "LH-F2",
-      "capacity": 100,
+      "id": "LH-3",
       "tags": [
-        "LH",
-        "Proj"
-      ]
-    }
-  ],
-  "Econ.2": [
-    [
-      {
-        "id": "CSE G1 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G1",
-          "Econ"
-        ]
-      },
-      {
-        "id": "CSE G2 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G2",
-          "Econ"
-        ]
-      }
-    ],
-    {
-      "id": "Dr. Manoj",
-      "tags": [
-        "Econ"
-      ]
-    },
-    {
-      "day": 1,
-      "hour": 5,
-      "duration": 1
-    },
-    {
-      "id": "LH-F2",
-      "capacity": 100,
-      "tags": [
-        "LH",
-        "Proj"
-      ]
-    }
-  ],
-  "Econ.3": [
-    [
-      {
-        "id": "CSE G1 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G1",
-          "Econ"
-        ]
-      },
-      {
-        "id": "CSE G2 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G2",
-          "Econ"
-        ]
-      }
-    ],
-    {
-      "id": "Dr. Manoj",
-      "tags": [
-        "Econ"
-      ]
-    },
-    {
-      "day": 3,
-      "hour": 1,
-      "duration": 1
-    },
-    {
-      "id": "LH-F2",
-      "capacity": 100,
-      "tags": [
-        "LH",
-        "Proj"
-      ]
+        "LH"
+      ],
+      "capacity": 100
     }
   ]
 }
