@@ -1,3 +1,4 @@
+import { BruteForce, HillClimbN, SimulatedAnnealing } from "./optimiser";
 import { TimeSched } from "./timesched";
 
 const t = new TimeSched({
@@ -31,10 +32,6 @@ const t = new TimeSched({
             tags: ['Math']
         },
         {
-            id: 'Dr. Mohit',
-            tags: ['CSE']
-        },
-        {
             id: 'Dr. Pradeep',
             tags: ['CSE']
         },
@@ -45,6 +42,10 @@ const t = new TimeSched({
         {
             id: 'Dr. Ghosh',
             tags: ['Bio']
+        },
+        {
+            id: 'Dr. Nitin',
+            tags: ['Lab']
         },
     ],
     Rooms: [
@@ -87,7 +88,16 @@ const t = new TimeSched({
         {
             name: 'C++ Tute G1',
             studentsRequired: (s) => s.tags.includes('CSE') && s.tags.includes('G1'),
-            facultyRequired: (f) => f.tags.includes('CSE'),
+            facultyRequired: (f) => f.tags.includes('Lab'),
+            roomsRequired: (r) => r.tags.includes('Proj'),
+            timeSlotRequired: (t) => t.duration == 1,
+            extraResourcesRequired: [],
+            weeklyFrequency: 1,
+        },
+        {
+            name: 'C++ Tute G2',
+            studentsRequired: (s) => s.tags.includes('CSE') && s.tags.includes('G2'),
+            facultyRequired: (f) => f.tags.includes('Lab'),
             roomsRequired: (r) => r.tags.includes('Proj'),
             timeSlotRequired: (t) => t.duration == 1,
             extraResourcesRequired: [],
@@ -96,7 +106,7 @@ const t = new TimeSched({
         {
             name: 'C++ Lab G1',
             studentsRequired: (s) => s.tags.includes('CSE') && s.tags.includes('G1'),
-            facultyRequired: (f) => f.tags.includes('CSE'),
+            facultyRequired: (f) => f.tags.includes('Lab'),
             roomsRequired: (r) => r.tags.includes('Lab'),
             timeSlotRequired: (t) => t.duration == 3,
             extraResourcesRequired: [],
@@ -105,18 +115,9 @@ const t = new TimeSched({
         {
             name: 'C++ Lab G2',
             studentsRequired: (s) => s.tags.includes('CSE') && s.tags.includes('G2'),
-            facultyRequired: (f) => f.tags.includes('CSE'),
+            facultyRequired: (f) => f.tags.includes('Lab'),
             roomsRequired: (r) => r.tags.includes('Lab'),
             timeSlotRequired: (t) => t.duration == 3,
-            extraResourcesRequired: [],
-            weeklyFrequency: 1,
-        },
-        {
-            name: 'C++ Tute G2',
-            studentsRequired: (s) => s.tags.includes('CSE') && s.tags.includes('G2'),
-            facultyRequired: (f) => f.tags.includes('CSE'),
-            roomsRequired: (r) => r.tags.includes('Proj'),
-            timeSlotRequired: (t) => t.duration == 1,
             extraResourcesRequired: [],
             weeklyFrequency: 1,
         },
@@ -141,18 +142,34 @@ const t = new TimeSched({
     ],
     lunchHours: [2, 3],
     penalties: {
-        lateday: 10,
-        nolunch: 50,
-        overlap: 100,
+        nolunch: 500,
+        lateday: 500,
+        overlap: 1000,
+        repeatSubject: 200,
+        consistencyBonusSub: 100,
+        consistencyBonusRoom: 10,
+        consistencyBonusFac: 10,
+        timePref: 1,
     },
     timepreference: [
-        [  2,  1,  0,  0,  0],
-        [  1,  0,  0,  0,  0],
+        [  0,  0,  0,  0,  0],
+        [  0,  0,  0,  0,  0],
         [  0,  0,  0,  0,  0],
         [  0,  0,  0,  0,  2],
         [  0,  0,  0,  0,  2],
-        [  1,  1,  1,  1,  2],
-    ]
+        [  0,  0,  0,  0,  2],
+    ],
+    config: {
+        steps: 100000,
+        optimiser: (a) => new HillClimbN(a, 10),
+    }
 });
 
-t.run(10000);
+let max = -Infinity;
+
+for (let i = 0; i < 10; i++) {
+    console.log("Run", i+1, "\n");
+    max = Math.max(max, t.run(max, 1000));
+}
+
+console.log("Max value saved to file: ", max);

@@ -45,16 +45,15 @@
       ]
     },
     {
-      "day": 1,
-      "hour": 2,
+      "day": 2,
+      "hour": 1,
       "duration": 1
     },
     {
-      "id": "LH-F2",
+      "id": "LH-F1",
       "capacity": 100,
       "tags": [
-        "LH",
-        "Proj"
+        "LH"
       ]
     }
   ],
@@ -105,7 +104,7 @@
     },
     {
       "day": 4,
-      "hour": 0,
+      "hour": 1,
       "duration": 1
     },
     {
@@ -156,22 +155,21 @@
       }
     ],
     {
-      "id": "Dr. Mohit",
+      "id": "Dr. Pradeep",
       "tags": [
         "CSE"
       ]
     },
     {
-      "day": 1,
+      "day": 3,
       "hour": 1,
       "duration": 1
     },
     {
-      "id": "LH-F2",
+      "id": "LH-F1",
       "capacity": 100,
       "tags": [
-        "LH",
-        "Proj"
+        "LH"
       ]
     }
   ],
@@ -221,16 +219,15 @@
       ]
     },
     {
-      "day": 2,
-      "hour": 0,
+      "day": 1,
+      "hour": 1,
       "duration": 1
     },
     {
-      "id": "LH-F2",
+      "id": "LH-F1",
       "capacity": 100,
       "tags": [
-        "LH",
-        "Proj"
+        "LH"
       ]
     }
   ],
@@ -281,14 +278,15 @@
     },
     {
       "day": 1,
-      "hour": 4,
+      "hour": 5,
       "duration": 1
     },
     {
-      "id": "LH-F1",
+      "id": "LH-F2",
       "capacity": 100,
       "tags": [
-        "LH"
+        "LH",
+        "Proj"
       ]
     }
   ],
@@ -338,15 +336,16 @@
       ]
     },
     {
-      "day": 0,
+      "day": 2,
       "hour": 5,
       "duration": 1
     },
     {
-      "id": "LH-F1",
+      "id": "LH-F2",
       "capacity": 100,
       "tags": [
-        "LH"
+        "LH",
+        "Proj"
       ]
     }
   ],
@@ -396,8 +395,8 @@
       ]
     },
     {
-      "day": 2,
-      "hour": 1,
+      "day": 3,
+      "hour": 5,
       "duration": 1
     },
     {
@@ -455,8 +454,8 @@
       ]
     },
     {
-      "day": 0,
-      "hour": 4,
+      "day": 4,
+      "hour": 5,
       "duration": 1
     },
     {
@@ -490,14 +489,55 @@
       }
     ],
     {
-      "id": "Dr. Pradeep",
+      "id": "Dr. Nitin",
       "tags": [
-        "CSE"
+        "Lab"
       ]
     },
     {
-      "day": 4,
-      "hour": 2,
+      "day": 1,
+      "hour": 4,
+      "duration": 1
+    },
+    {
+      "id": "LH-F2",
+      "capacity": 100,
+      "tags": [
+        "LH",
+        "Proj"
+      ]
+    }
+  ],
+  "C++ Tute G2.0": [
+    [
+      {
+        "id": "CSE G2 Bio",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G2",
+          "Bio"
+        ]
+      },
+      {
+        "id": "CSE G2 Econ",
+        "strength": 25,
+        "tags": [
+          "CSE",
+          "G2",
+          "Econ"
+        ]
+      }
+    ],
+    {
+      "id": "Dr. Nitin",
+      "tags": [
+        "Lab"
+      ]
+    },
+    {
+      "day": 2,
+      "hour": 4,
       "duration": 1
     },
     {
@@ -531,14 +571,14 @@
       }
     ],
     {
-      "id": "Dr. Mohit",
+      "id": "Dr. Nitin",
       "tags": [
-        "CSE"
+        "Lab"
       ]
     },
     {
-      "day": 3,
-      "hour": 0,
+      "day": 0,
+      "hour": 3,
       "duration": 3
     },
     {
@@ -571,14 +611,14 @@
       }
     ],
     {
-      "id": "Dr. Mohit",
+      "id": "Dr. Nitin",
       "tags": [
-        "CSE"
+        "Lab"
       ]
     },
     {
-      "day": 4,
-      "hour": 3,
+      "day": 0,
+      "hour": 0,
       "duration": 3
     },
     {
@@ -586,47 +626,6 @@
       "capacity": 100,
       "tags": [
         "Lab"
-      ]
-    }
-  ],
-  "C++ Tute G2.0": [
-    [
-      {
-        "id": "CSE G2 Bio",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G2",
-          "Bio"
-        ]
-      },
-      {
-        "id": "CSE G2 Econ",
-        "strength": 25,
-        "tags": [
-          "CSE",
-          "G2",
-          "Econ"
-        ]
-      }
-    ],
-    {
-      "id": "Dr. Mohit",
-      "tags": [
-        "CSE"
-      ]
-    },
-    {
-      "day": 2,
-      "hour": 4,
-      "duration": 1
-    },
-    {
-      "id": "LH-F2",
-      "capacity": 100,
-      "tags": [
-        "LH",
-        "Proj"
       ]
     }
   ],
@@ -658,8 +657,8 @@
       ]
     },
     {
-      "day": 0,
-      "hour": 3,
+      "day": 4,
+      "hour": 0,
       "duration": 1
     },
     {
@@ -699,15 +698,14 @@
     },
     {
       "day": 2,
-      "hour": 2,
+      "hour": 0,
       "duration": 1
     },
     {
-      "id": "LH-F2",
+      "id": "LH-F1",
       "capacity": 100,
       "tags": [
-        "LH",
-        "Proj"
+        "LH"
       ]
     }
   ],
@@ -739,16 +737,15 @@
       ]
     },
     {
-      "day": 3,
-      "hour": 4,
+      "day": 1,
+      "hour": 0,
       "duration": 1
     },
     {
-      "id": "LH-F2",
+      "id": "LH-F1",
       "capacity": 100,
       "tags": [
-        "LH",
-        "Proj"
+        "LH"
       ]
     }
   ],
@@ -780,8 +777,8 @@
       ]
     },
     {
-      "day": 4,
-      "hour": 1,
+      "day": 3,
+      "hour": 0,
       "duration": 1
     },
     {
@@ -820,7 +817,7 @@
       ]
     },
     {
-      "day": 0,
+      "day": 1,
       "hour": 2,
       "duration": 1
     },
@@ -861,7 +858,7 @@
     },
     {
       "day": 2,
-      "hour": 3,
+      "hour": 2,
       "duration": 1
     },
     {
@@ -900,16 +897,15 @@
       ]
     },
     {
-      "day": 4,
-      "hour": 1,
+      "day": 3,
+      "hour": 2,
       "duration": 1
     },
     {
-      "id": "LH-F2",
+      "id": "LH-F1",
       "capacity": 100,
       "tags": [
-        "LH",
-        "Proj"
+        "LH"
       ]
     }
   ],
@@ -941,8 +937,8 @@
       ]
     },
     {
-      "day": 3,
-      "hour": 4,
+      "day": 4,
+      "hour": 2,
       "duration": 1
     },
     {

@@ -1,8 +1,9 @@
 import Table from "cli-table3";
 import { Allocation, AllocationProblem, NamedRequirements, Resource, ResourceSet } from "./allocator";
-import { BruteForce, HillClimb } from "./optimiser";
+import { BruteForce, HillClimb, HillClimbN, Optimiser, SimulatedAnnealing } from "./optimiser";
 import { MultipleSelectResourceSet, RandomSelectResourceSet, TimeResource } from "./resourcetypes";
 import fs from 'fs';
+import { countDuplicates } from "./helpers";
 
 interface StudentGroup extends Resource {
     id: string,
@@ -55,8 +56,17 @@ interface TimeTableInputs {
         overlap: number,
         lateday: number,
         nolunch: number,
+        repeatSubject: number,
+        consistencyBonusSub: number,
+        consistencyBonusRoom: number,
+        consistencyBonusFac: number,
+        timePref: number,
     }
-    timepreference: number[][]
+    timepreference: number[][],
+    config: {
+        steps: number,
+        optimiser: (a: AllocationProblem) => Optimiser
+    }
 }
 
 type TimeTable = Allocation;
@@ -127,9 +137,9 @@ class TimeSched {
                     }
                     // also adds time preference penalty and late day penalty
                     if (ts.hour + i >= this.data.hours)
-                    penalty += this.data.penalties.lateday;
+                        penalty += this.data.penalties.lateday;
                     else
-                        penalty += (t+1) * this.data.timepreference[ts.hour+i][ts.day];
+                        penalty += (t + 1) * this.data.timepreference[ts.hour + i][ts.day] * this.data.penalties.timePref;
                     m1.set(`${studentgrp.id}, ${ts.hour + i}, ${ts.day}`, t + 1);
                 }
             }
@@ -142,7 +152,7 @@ class TimeSched {
                     if (ts.hour + i >= this.data.hours)
                         penalty += this.data.penalties.lateday;
                     else
-                        penalty += (t+1) * this.data.timepreference[ts.hour+i][ts.day];
+                        penalty += (t + 1) * this.data.timepreference[ts.hour + i][ts.day] * this.data.penalties.timePref;
                     m2.set(`${fac.id}, ${ts.hour + i}, ${ts.day}`, t + 1);
                 }
             }
@@ -170,7 +180,7 @@ class TimeSched {
                     }
                 }
                 if (!lunchfound)
-                penalty += this.data.penalties.nolunch;
+                    penalty += this.data.penalties.nolunch;
             }
         }
         // lunchtime for faculties
@@ -184,7 +194,58 @@ class TimeSched {
                     }
                 }
                 if (!lunchfound)
-                penalty += this.data.penalties.nolunch;
+                    penalty += this.data.penalties.nolunch;
+            }
+        }
+        //////////////////////////////////////////////////////////////////
+        // Subject repeat and consistency
+        let sv = new Map<string, [string, Faculty, Room]>(); // student view
+        t.assignment.forEach((rlist, course_name) => {
+            const slist = rlist[0] as StudentGroup[];
+            const fac = rlist[1] as Faculty;
+            const ts = rlist[2] as TimeSlot;
+            const room = rlist[3] as Room;
+            for (const studentgrp of slist) {
+                for (let i = 0; i < ts.duration; i++) {
+                    const cell_id = `${studentgrp.id}, ${ts.hour + i}, ${ts.day}`;
+                    sv.set(cell_id, [course_name, fac, room]);
+                }
+            }
+        });
+        const course_name = (details: [string, Faculty, Room] | undefined) => (details || ['.0'])[0].split('.')[0];
+        const faculty_name = (details: [string, Faculty, Room] | undefined) => (details) ? details[1].id : '';
+        const room_name = (details: [string, Faculty, Room] | undefined) => (details) ? details[2].id : '';
+        // Subject repeat penalty
+        for (const studentgrp of this.Students.allResources) {
+            for (let day = 1; day < this.data.days; day++) {
+                const courses_this_day = [];
+                for (let hour = 0; hour < this.data.hours; hour++) {
+                    const cell_id = `${studentgrp.id}, ${hour}, ${day}`;
+                    courses_this_day.push(course_name(sv.get(cell_id)));
+                }
+                penalty += countDuplicates(courses_this_day) * this.data.penalties.repeatSubject;
+            }
+        }
+        // consistency bonus
+        for (const studentgrp of this.Students.allResources) {
+            for (let day = 0; day < this.data.days; day++) {
+                for (let hour = 0; hour < this.data.hours; hour++) {
+                    const cell_id = `${studentgrp.id}, ${hour}, ${day}`;
+                    const cell_id_next_day = `${studentgrp.id}, ${hour}, ${day + 1}`;
+                    const cell_id_next_hr = `${studentgrp.id}, ${hour + 1}, ${day}`;
+                    if (course_name(sv.get(cell_id)) == course_name(sv.get(cell_id_next_day))) {
+                        penalty -= this.data.penalties.consistencyBonusSub;
+                    }
+                    if (room_name(sv.get(cell_id)) == room_name(sv.get(cell_id_next_day))) {
+                        penalty -= this.data.penalties.consistencyBonusRoom;
+                    }
+                    if (room_name(sv.get(cell_id)) == room_name(sv.get(cell_id_next_hr))) {
+                        penalty -= this.data.penalties.consistencyBonusRoom;
+                    }
+                    if (faculty_name(sv.get(cell_id)) == faculty_name(sv.get(cell_id_next_day))) {
+                        penalty -= this.data.penalties.consistencyBonusFac;
+                    }
+                }
             }
         }
         //////////////////////////////////////////////////////////////////
@@ -211,7 +272,7 @@ class TimeSched {
                 for (const studentgrp of slist) {
                     const table = m.get(studentgrp.id);
                     if (table![ts.hour][ts.day] != '')
-                        table![ts.hour][ts.day] += `\n`;
+                        table![ts.hour][ts.day] += `***\n`;
                     table![ts.hour][ts.day] += `${key.split('.')[0]}\n${fac.id}\n${room.id}`;
                     for (let i = 1; i < ts.duration && ts.hour + i < this.data.hours; i++) {
                         table![ts.hour + i][ts.day] += `^`;
@@ -234,7 +295,7 @@ class TimeSched {
                 const room = rlist[3] as Room;
                 const table = m.get(fac.id);
                 if (table![ts.hour][ts.day] != '')
-                    table![ts.hour][ts.day] += `\n`;
+                    table![ts.hour][ts.day] += `***\n`;
                 table![ts.hour][ts.day] += `${key.split('.')[0]}\n${slist.map(s => s.id).join('+')}\n${room.id}`;
                 for (let i = 1; i < ts.duration && ts.hour + i < this.data.hours; i++) {
                     table![ts.hour + i][ts.day] += `^`;
@@ -256,7 +317,7 @@ class TimeSched {
                 const room = rlist[3] as Room;
                 const table = m.get(room.id);
                 if (table![ts.hour][ts.day] != '')
-                    table![ts.hour][ts.day] += `\n`;
+                    table![ts.hour][ts.day] += `***\n`;
                 table![ts.hour][ts.day] += `${key.split('.')[0]}\n${slist.map(s => s.id).join('+')}\n${fac.id}`;
                 for (let i = 1; i < ts.duration && ts.hour + i < this.data.hours; i++) {
                     table![ts.hour + i][ts.day] += `^`;
@@ -270,24 +331,8 @@ class TimeSched {
             const clitable = new Table(
                 {
                     colWidths: Array(this.data.days).fill(30), rowHeights: Array(this.data.hours).fill(3),
-                    chars: {
-                        'top': '═'
-                        , 'top-mid': '╤'
-                        , 'top-left': '╔'
-                        , 'top-right': '╗'
-                        , 'bottom': '═'
-                        , 'bottom-mid': '╧'
-                        , 'bottom-left': '╚'
-                        , 'bottom-right': '╝'
-                        , 'left': '║'
-                        , 'left-mid': '╟'
-                        , 'right': '║'
-                        , 'right-mid': '╢'
-                    },
-                    style: {
-                        head: []
-                        , border: []
-                    },
+                    chars: { 'top': '═', 'top-mid': '╤', 'top-left': '╔', 'top-right': '╗', 'bottom': '═', 'bottom-mid': '╧', 'bottom-left': '╚', 'bottom-right': '╝', 'left': '║', 'left-mid': '╟', 'right': '║', 'right-mid': '╢' },
+                    style: { head: [], border: [], },
                     // wordWrap: true
                 }
             );
@@ -299,33 +344,30 @@ class TimeSched {
         return str;
     }
 
-    run(steps: number) {
-        const h = new HillClimb(this.allocationProblem);
-        for (let i = 0; i < steps; i++) {
+    run(saveIf: number, quiet: number = 1) {
+        const h = this.data.config.optimiser(this.allocationProblem);
+        for (let i = 0; i < this.data.config.steps; i++) {
             h.step();
             const c = h.bestSolution() as TimeTable;
-            // console.clear();
-            if (i % 100 == 0)
-                console.log(`Iteration ${i + 1} Eval: `, c.evaluate());
-            // console.log(this.displayTable(c, this.Students));
-            // for (let i = 0; i < 1e6; i++) {
-            //     for (let j = 0; j < 100; j++) {
-            //     }
-            // }
+            if (i % quiet == 0)
+                console.log(`Iteration`, i+1, `\tValue: `, c.evaluate());
         }
-        // console.clear();
         const c = h.bestSolution() as TimeTable;
-        console.log(`Iteration ${steps} Eval: `, c.evaluate());
-        // console.dir(c.assignment, { depth: 5 });
+        console.log(`Final Value: `, c.evaluate());
         let plainobject: any = {};
         for (const [key, val] of c.assignment) {
             plainobject[key] = val;
         }
-        fs.writeFileSync('./full_result.json', JSON.stringify(plainobject, null, 2));
-        fs.writeFileSync('./Students_view.txt', this.displayTable(c, this.Students));
-        fs.writeFileSync('./Faculties_view.txt', this.displayTable(c, this.Faculties));
-        fs.writeFileSync('./Rooms_view.txt', this.displayTable(c, this.Rooms));
-        console.log("Saved results to file!");
+        if (c.evaluate() > saveIf) {
+            console.log();
+            fs.writeFileSync('./full_result.json', JSON.stringify(plainobject, null, 2));
+            fs.writeFileSync('./Students_view.txt', this.displayTable(c, this.Students));
+            fs.writeFileSync('./Faculties_view.txt', this.displayTable(c, this.Faculties));
+            fs.writeFileSync('./Rooms_view.txt', this.displayTable(c, this.Rooms));
+            console.log("Saved results to file!");
+            console.log();
+        }
+        return c.evaluate();
     }
 }
 
